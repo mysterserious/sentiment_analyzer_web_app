@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Analyzer App</title>
+</head>
+<body style="background-color:#33FFE3;">
+<div align="center">
+<img src="static/builtin/emojis.jpg" align="center" width="400px">
+</div>
+<div align="center">
+<h1>Sentiment Analyzer App</h1>
+</div>
+<div align="center" >
+    <form class="form" onsubmit="return validate()" method="post">
+        <h4>Enter Text to predict its Sentiment</h4>
+        <textarea placeholder="Enter text" cols="50" rows="10" name="text"></textarea><br>
+        <button onclick="this.form.submit()">Submit</button>
+    </form>
+</div>
+<br>
+<br>
+<div align="center">
+    <h4 style="color:green">{{positive}}</h4>
+    <h4 style="color:red">{{negative}}</h4>
+    <h4>{{neutral}}</h4>
+</div>
+</body>
+</html>
